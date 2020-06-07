@@ -1,12 +1,17 @@
 /* meu background dividido */
+body {
+  background-color: white;
+}
+
 body::after {
   content: "";
-  position: fixed;
-  background-color: white;
-  top: 260px;
+  position: absolute;
+  background: var(--secundary-color);
+  top: 0;
   right: 0;
   left: 0;
   bottom: 0;
+  height: 16rem;
   z-index: -1;
 }
 
@@ -23,7 +28,7 @@ body::after {
   justify-content: space-between;
   align-items: center;
 }
-/* #page-create-results a {
+#page-create-results a {
   color: var(--title-color);
   font-weight: bold;
   display: flex;
@@ -35,7 +40,7 @@ body::after {
   width: 20px;
   height: 23px;
   display: flex;
-} */
+}
 
 main {
   margin: 48px;
